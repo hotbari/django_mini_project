@@ -77,7 +77,10 @@ WSGI_APPLICATION = "config.wsgi.application"
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
 # load_dotenv()
-load_dotenv(dotenv_path=BASE_DIR / ".env")
+# load_dotenv(dotenv_path=BASE_DIR / ".env")
+
+# .env 파일 로드
+load_dotenv(os.path.join(BASE_DIR, ".env"))
 
 DATABASES = {
     "default": {
