@@ -3,6 +3,4 @@ from django.urls import path
 
 from .urls_base import urlpatterns
 
-urlpatterns += [
-
-]
+urlpatterns += []
