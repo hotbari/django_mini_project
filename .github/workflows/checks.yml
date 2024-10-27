@@ -76,7 +76,7 @@ jobs:
         poetry run python manage.py makemigrations
         poetry run python manage.py migrate
 
-    # django test를 사용하여 모든 앱의 테스트코드를 실행합니다..
+    # django test를 사용하여 모든 앱의 테스트코드를 실행합니다...
     - name: Test python project
       run: |
         poetry run python manage.py test
