@@ -16,7 +16,7 @@ jobs:
     # services 키워드를 사용하여 PostgreSQL 서비스를 설정
     services:
       db:
-        image: postgres:14
+        image: postgres:latest
         ports:
           - 5432:5432
         # Github Secrets에서 가져와서 env로 등록, Postgres 데이터 베이스 연결 설정
@@ -80,7 +80,7 @@ jobs:
 #        DB_PORT: 5432
 
       run: |
-        poetry run python manage.py makemigrations --settings=config.settings.base
+#        poetry run python manage.py makemigrations --settings=config.settings.base
         poetry run python manage.py migrate --settings=config.settings.base
     # django test를 사용하여 모든 앱의 테스트코드를 실행합니다.
 
