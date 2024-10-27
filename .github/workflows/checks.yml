@@ -80,8 +80,6 @@ jobs:
         DB_PORT: 5432
 
       run: |
-#        poetry run python manage.py makemigrations
-#        poetry run python manage.py migrate
         poetry run python manage.py makemigrations --settings=config.settings.base
         poetry run python manage.py migrate --settings=config.settings.base
     # django test를 사용하여 모든 앱의 테스트코드를 실행합니다.
