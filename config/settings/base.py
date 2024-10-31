@@ -31,13 +31,19 @@ ALLOWED_HOSTS = []
 
 # Application definition
 
-INSTALLED_APPS = [
+INSTALLED_APPS = DJANGO_APPS + CUSTOM_APPS
+
+DJANGO_APPS =    [
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+]
+
+CUSTOM_APPS = [
+    'users'
 ]
 
 MIDDLEWARE = [
