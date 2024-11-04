@@ -31,7 +31,7 @@ ALLOWED_HOSTS = []
 
 # Application definition
 
-INSTALLED_APPS = DJANGO_APPS + CUSTOM_APPS
+
 
 DJANGO_APPS =    [
     "django.contrib.admin",
@@ -45,6 +45,8 @@ DJANGO_APPS =    [
 CUSTOM_APPS = [
     'users'
 ]
+
+INSTALLED_APPS = DJANGO_APPS + CUSTOM_APPS
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
