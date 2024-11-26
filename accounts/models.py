@@ -10,5 +10,3 @@ class Account(models.Model):
 
     def __str__(self):
         return f"{self.account_number} ({self.bank_code})"
-
-# Create your models here.
